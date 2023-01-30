@@ -1,0 +1,137 @@
+.sign-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    align-items: center;
+    background: #f0efeb;
+    background-size: cover;
+  }
+  
+  #login-header {
+    text-align: left;
+    font-family: "Satoshi", sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    letter-spacing: -0.1px;
+    margin-bottom: 35px;
+  }
+  
+  #login-subheader {
+    font-family: "Satoshi", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+  }
+  
+  #login-question {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    letter-spacing: -0.3px;
+  }
+  
+  #login-register-prompt {
+    display: flex;
+    margin-top: 24px;
+    margin-left: 5px;
+  }
+  
+  #login-register-prompt p {
+    display: inline-block;
+    margin-bottom: 0px;
+  }
+  
+  .login-redirect {
+    display: inline-block;
+    margin-left: 7px;
+  
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .login-redirect:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .form-parent {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  
+    box-shadow: 6px 12px 60px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    padding: 50px;
+    padding-bottom: 35px;
+    border-radius: 8px;
+  }
+  
+  .sign-btn {
+    border-radius: 8px !important;
+    background-color: rgb(6, 100, 230) !important;
+    border: 0px !important;
+  }
+  
+  .header-block {
+    margin-bottom: 1em;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .sign-in-text {
+    text-align: center;
+  }
+  
+  .sign-up-option-prompt {
+    text-align: center;
+    margin-top: -2.4em;
+  }
+  
+  .sign-up-option-prompt li {
+    display: inline-block;
+    padding: 0.5em;
+  }
+  
+  .username-text {
+    text-align: left;
+    margin-left: 25%;
+  }
+  
+  .username-input {
+    width: 50%;
+    height: 2em;
+    margin-left: 25%;
+    margin-top: -0.8em;
+    background: rgba(217, 217, 217, 0.67);
+    border-radius: 14px;
+  }
+  
+  .password-text {
+    text-align: left;
+    margin-left: 25%;
+  }
+  
+  .password-input {
+    width: 50%;
+    height: 2em;
+    margin-left: 25%;
+    margin-top: -0.8em;
+    background: rgba(217, 217, 217, 0.67);
+    border-radius: 14px;
+  }
+  
+  .sign-in-btn {
+    width: 30%;
+    height: 2em;
+    margin-left: 35%;
+    background: #538c51;
+    border-radius: 69px;
+  }
