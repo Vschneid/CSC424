@@ -70,9 +70,14 @@ app.post('/account/logup', (req, res) => {
 
 });
 
-//function generateToken(user) {
-    //return `${user.userid}-${Date.now()}`;
-//}
+app.get('/users', (req, res) => {
+  try {
+    res.json(users);
+  } catch (err) {
+    console.error(err);
+    res.status(500).send('Could Not Send List of Users');
+  }
+});
 
 
 app.get('/', (req, res) => {
