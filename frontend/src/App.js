@@ -8,19 +8,21 @@ import { ProtectedRoute } from "./utils/ProtectedRoute";
 import { NavLink } from 'react-router-dom';
 import { useAuth } from "./context/AuthProvider";
 import { AuthProvider } from "./context/AuthProvider";
+import { useCookies } from 'react-cookie';
 
 export const AuthContext = React.createContext(null);
 
 
 const App = () => {
   const [token, setToken] = useState(null);
+  const [cookies, setCookie] = useCookies(['my-token']);
+  const { value } = useAuth();
 
   useEffect(() => {
-    document.body.style.backgroundColor = "lightblue"
+    document.body.style.backgroundColor = "lightblue";
   });
-
+  
   const handleLogout = () => {setToken(null);};
-
 
   return (
     <>
@@ -46,17 +48,18 @@ const App = () => {
   };
 
 const Navigation = () => {
+  const [cookies, setCookie] = useCookies(['my-token']);
   const { value } = useAuth();
   return (
     <nav>
       <NavLink to="/home">Home</NavLink>
       <NavLink to="/landing">Landing</NavLink>
-      <NavLink to="/log-in">SignIn</NavLink>
-      <NavLink to="/log-up">SignUp</NavLink>
-      {value.token && (
+      <NavLink to="/log-in">LogIn</NavLink>
+      <NavLink to="/log-up">LogUp</NavLink>
+      {cookies.token !== "null" && (
         <button type="button" onClick={value.onLogout}>
           Sign Out
-     </button>
+        </button>
       )}
     </nav>
   )
