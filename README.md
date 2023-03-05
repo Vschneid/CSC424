@@ -10,5 +10,5 @@ Instructions:<br/>
       package.json file as well.<br/>
   <br/>
  Vulnerabilities Found:<br/>
-      I was running an older version of npm and axios (as well as cors), which revealed vulnerabilites in my risk assessment<br/>
+      I was running an older version of npm and axios (as well as cors), which revealed vulnerabilites in my risk <br/>assessment
       from FOSSA and SNYK. I was able to fix these vulnerabilities by updating to the latest version of the software<br/>
