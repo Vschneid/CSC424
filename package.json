@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "helmet": "^6.0.1",
+    "mongoose": "^6.10.0",
+    "react-cookies": "^0.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+    "start:frontend": "cd frontend && npm start",
+    "start:backend": "cd backend && node backend.js"
+  }
+}
