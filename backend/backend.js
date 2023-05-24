@@ -89,12 +89,10 @@ app.post('/account/logup', async (req, res) => {
     const exists = await userServices.checkUser(username);
 
     if(exists == true) {
-      console.log("HHHHHHHHHH")
       res.status(403).end();
     } else {
       if(hasUpper && hasDigit && hasSymbol) {
         const userAdded = await userServices.addUser({ name, username, password, email });
-        console.log("hello");
         if (userAdded)
           res.status(201);
         else
@@ -102,7 +100,6 @@ app.post('/account/logup', async (req, res) => {
         const token = generateAccessToken({ username: req.body.username });
         res.send(token);
       } else {
-        console.log("why");
         res.status(403).send("Password is not strong, include a capital letter, a number, and a special character.");
       }
     }
