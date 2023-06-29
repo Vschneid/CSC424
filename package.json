@@ -2,7 +2,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "helmet": "^6.0.1",
-    "mongoose": "^6.10.0",
+    "mongoose": "^6.11.1",
     "react-cookies": "^0.1.1"
   },
   "devDependencies": {
